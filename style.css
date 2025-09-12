@@ -1,0 +1,23 @@
+.hero--bg{
+  background: url("public/images/123324.png") center/cover no-repeat;
+  border-radius: 20px;
+  padding: 80px 0;
+  text-align: center;
+  color:#fff;
+}
+.hero--bg h1{
+  font-size:42px;
+  font-weight:800;
+}
+.hero--bg .accent{
+  color:#ff2d2d; /* أحمر */
+}
+.hero--bg p{
+  font-size:18px;
+  margin:10px 0 20px;
+  color:#f1f1f1;
+}
+.hero--bg .btn--primary{
+  background:#ff2d2d;
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+}
