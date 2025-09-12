@@ -1,20 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahmed Othman ADV — Home</title>
-<link rel="stylesheet" href="assets/style.css?v=3">
 
+  <!-- CSS (break cache) -->
+  <link rel="stylesheet" href="assets/style.css?v=4">
+
+  <!-- Fallback to force hero background if external CSS is cached -->
+  <style>
+    .hero{position:relative;overflow:hidden;border-radius:20px}
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background: url('public/images/ao-hero.png') center/cover no-repeat !important;
+      filter: brightness(.58); z-index:-2;
+    }
+    .hero::after{
+      content:"";position:absolute;inset:0;
+      background: linear-gradient(0deg, rgba(0,0,0,.25), rgba(0,0,0,.25));
+      z-index:-1;
+    }
+  </style>
 
   <script defer src="assets/script.js"></script>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
       <a href="index.html" class="brand">
-        <img src="public/images/logo.jpg" alt="Ahmed Othman ADV" class="logo"/>
+        <img src="public/images/logo.jpg" alt="Ahmed Othman ADV" class="logo" />
         <span>Ahmed Othman ADV</span>
       </a>
       <nav class="nav">
@@ -28,7 +45,9 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="container">
+
     <!-- HERO -->
     <section class="hero" style="--hero:url('public/images/ao-hero.png')">
       <h1><span class="red">Custom</span> Neon For Your Brand</h1>
@@ -56,7 +75,10 @@
         <h3>Gaming</h3><p>RGB rooms & stream setups.</p>
       </a>
     </section>
+
   </main>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>© 2025 Ahmed Othman ADV — All Rights Reserved.</p>
@@ -65,11 +87,3 @@
 
 </body>
 </html>
-<head> <style>
-  /* TEST: احذفها بعد التأكد */
-  .hero::before{
-    content:"";position:absolute;inset:0;
-    background:url('public/images/ao-hero.png') center/cover no-repeat !important;
-    z-index:-2;filter:brightness(.58);
-  }
-</style>
