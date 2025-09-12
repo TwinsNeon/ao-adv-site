@@ -65,3 +65,11 @@
 
 </body>
 </html>
+<head> <style>
+  /* TEST: احذفها بعد التأكد */
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:url('public/images/ao-hero.png') center/cover no-repeat !important;
+    z-index:-2;filter:brightness(.58);
+  }
+</style>
