@@ -1,1 +1,1 @@
-console.log("AO ADV site ready");
+console.log('AO ADV site loaded');
